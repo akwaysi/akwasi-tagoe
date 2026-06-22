@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Akwasi Tagoe – PhD Researcher</title>
 
-  <!-- Google Analytics 4 -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK205M49W0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,7 +15,8 @@
   </script>
 
   <!-- Browser tab icon / favicon: AT initials -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232D5016'/%3E%3Ctext x='50' y='62' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232D5016'/%3E%3Ctext x='50' y='62' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -76,6 +77,13 @@
       font-weight: 600;
       color: var(--green);
       letter-spacing: -0.01em;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav-logo:visited { color: var(--green); }
+    .nav-logo:hover {
+      color: var(--green-light);
+      text-decoration: none;
     }
     .nav-links {
       display: flex; gap: 1.75rem;
@@ -745,7 +753,7 @@
 <!-- ── Nav ────────────────────────────────────────────── -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">Akwasi Tagoe</a>
+    <a href="#hero" class="nav-logo" aria-label="Go to homepage">Akwasi Tagoe</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
@@ -804,8 +812,8 @@
           <span class="tag">Geospatial Analytics</span>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="#contact" class="hero-cta" onclick="gtag('event', 'contact_cta_click');">Get in Touch →</a>
-          <a href="files/Akwasi_Tagoe_CV.pdf" target="_blank" class="hero-cta" onclick="gtag('event', 'cv_download');">Download CV</a>
+          <a href="#contact" class="hero-cta" onclick="gtag('event','get_in_touch_click');">Get in Touch →</a>
+          <a href="files/Akwasi_Tagoe_CV.pdf" target="_blank" class="hero-cta" onclick="gtag('event','cv_download');">Download CV</a>
         </div>
       </div>
 
@@ -957,7 +965,7 @@
         <div class="pub-title">Advances in crop germplasm conservation: A review of non-destructive techniques and their role in global food security</div>
         <div class="pub-authors">Yeboah, A., Tetteh, R., Mensah, E. O., Bonsu, B. B., <strong>Tagoe, A.</strong>, &amp; Boateng, I. D.</div>
         <div class="pub-venue">Journal of Agriculture and Food Research, 102435</div>
-        <a class="pub-link" href="https://doi.org/10.1016/j.jafr.2025.102435" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'JAFR 2025 germplasm conservation'});">doi.org/10.1016/j.jafr.2025.102435 ↗</a>
+        <a class="pub-link" href="https://doi.org/10.1016/j.jafr.2025.102435" target="_blank" rel="noopener" onclick="gtag('event','publication_click',{'event_label':'JAFR 2025'});">doi.org/10.1016/j.jafr.2025.102435 ↗</a>
       </div>
 
       <div class="pub-item">
@@ -965,7 +973,7 @@
         <div class="pub-title">Blackberry growth monitoring and feature quantification with unmanned aerial vehicle (UAV) remote sensing</div>
         <div class="pub-authors"><strong>Tagoe, A.</strong>, Silva, A., Koparan, C., Poncet, A., Wang, D., Johnson, D., &amp; Worthington, M.</div>
         <div class="pub-venue">AgriEngineering, 6(4), 4549</div>
-        <a class="pub-link" href="https://doi.org/10.3390/agriengineering6040260" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'AgriEngineering 2024 blackberry UAV'});">doi.org/10.3390/agriengineering6040260 ↗</a>
+        <a class="pub-link" href="https://doi.org/10.3390/agriengineering6040260" target="_blank" rel="noopener" onclick="gtag('event','publication_click',{'event_label':'AgriEngineering 2024'});">doi.org/10.3390/agriengineering6040260 ↗</a>
       </div>
 
       <div class="pub-item">
@@ -987,7 +995,7 @@
         <div class="pub-title">Preliminary analysis of computer vision for blackberry flower quantification</div>
         <div class="pub-authors"><strong>Tagoe, A.</strong>, Bist, R. B., Koparan, C., Johnson, D., Wang, D., Worthington, M., &amp; Poncet, A.</div>
         <div class="pub-venue">Proceedings of the 2025 ASABE Annual International Meeting</div>
-        <a class="pub-link" href="https://doi.org/10.13031/aim.202501350" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'ASABE 2025 blackberry flower quantification'});">doi.org/10.13031/aim.202501350 ↗</a>
+        <a class="pub-link" href="https://doi.org/10.13031/aim.202501350" target="_blank" rel="noopener" onclick="gtag('event','publication_click',{'event_label':'ASABE 2025'});">doi.org/10.13031/aim.202501350 ↗</a>
       </div>
 
       <div class="pub-item">
@@ -1036,7 +1044,7 @@
     <h2 class="section-heading">In the <em>Media</em></h2>
     <div class="media-list">
 
-      <a class="media-card" href="https://aaes.uada.edu/news/uavs-blackberry-flowering/" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Arkansas Ag Experiment Station'});">
+      <a class="media-card" href="https://aaes.uada.edu/news/uavs-blackberry-flowering/" target="_blank" rel="noopener" onclick="gtag('event','media_click',{'event_label':'Arkansas Ag Experiment Station'});">
         <div class="media-meta">
           <span class="media-outlet">Arkansas Ag Experiment Station</span>
           <span class="media-date">Feb. 2026</span>
@@ -1045,7 +1053,7 @@
         <div class="media-arrow">→</div>
       </a>
 
-      <a class="media-card" href="https://news.uark.edu/articles/79965/oei-selects-six-graduate-entrepreneurial-fellows-for-2025" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'University of Arkansas News'});">
+      <a class="media-card" href="https://news.uark.edu/articles/79965/oei-selects-six-graduate-entrepreneurial-fellows-for-2025" target="_blank" rel="noopener" onclick="gtag('event','media_click',{'event_label':'University of Arkansas News'});">
         <div class="media-meta">
           <span class="media-outlet">University of Arkansas News</span>
           <span class="media-date">Sep. 2025</span>
@@ -1054,7 +1062,7 @@
         <div class="media-arrow">→</div>
       </a>
       <!-- Ventureburn -->
-      <a class="media-card" href="https://ventureburn.com/2019/05/nocofio-startupbootcamp-fintech-dubai/" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Ventureburn'});">
+      <a class="media-card" href="https://ventureburn.com/2019/05/nocofio-startupbootcamp-fintech-dubai/" target="_blank" rel="noopener" onclick="gtag('event','media_click',{'event_label':'Ventureburn'});">
        <div class="media-meta">
          <span class="media-outlet">Ventureburn</span>
          <span class="media-date">May 2019</span>
@@ -1064,7 +1072,7 @@
       </a>
 
 <!-- Modern Ghana -->
-    <a class="media-card" href="https://www.modernghana.com/news/892369/2018-ruforum-produces-two-ghanaian-winners.html" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Modern Ghana'});">
+    <a class="media-card" href="https://www.modernghana.com/news/892369/2018-ruforum-produces-two-ghanaian-winners.html" target="_blank" rel="noopener" onclick="gtag('event','media_click',{'event_label':'Modern Ghana'});">
      <div class="media-meta">
       <span class="media-outlet">Modern Ghana</span>
      <span class="media-date">Oct. 2018</span>
@@ -1142,7 +1150,7 @@
         <div class="contact-icon">✉️</div>
         <div>
           <div class="contact-label">Email</div>
-          <div class="contact-val"><a href="mailto:atagoe@uark.edu" onclick="gtag('event', 'email_click');">atagoe@uark.edu</a></div>
+          <div class="contact-val"><a href="mailto:atagoe@uark.edu" onclick="gtag('event','email_click');">atagoe@uark.edu</a></div>
         </div>
       </div>
       <div class="contact-card">
@@ -1155,7 +1163,7 @@
         </div>
         <div>
           <div class="contact-label">LinkedIn</div>
-          <div class="contact-val"><a href="https://www.linkedin.com/in/akwasi-tagoe/" target="_blank" rel="noopener" onclick="gtag('event', 'linkedin_click');">akwasi-tagoe</a></div>
+          <div class="contact-val"><a href="https://www.linkedin.com/in/akwasi-tagoe/" target="_blank" rel="noopener" onclick="gtag('event','linkedin_click');">akwasi-tagoe</a></div>
         </div>
       </div>
       <div class="contact-card">
@@ -1168,7 +1176,7 @@
         </div>
         <div>
           <div class="contact-label">GitHub</div>
-          <div class="contact-val"><a href="https://github.com/akwaysi" target="_blank" rel="noopener" onclick="gtag('event', 'github_click');">akwaysi</a></div>
+          <div class="contact-val"><a href="https://github.com/akwaysi" target="_blank" rel="noopener" onclick="gtag('event','github_click');">akwaysi</a></div>
         </div>
       </div>
       <div class="contact-card">
@@ -1182,14 +1190,14 @@
         </div>
         <div>
           <div class="contact-label">Google Scholar</div>
-          <div class="contact-val"><a href="https://scholar.google.com/citations?user=a0w5UUgAAAAJ&hl=en" target="_blank" rel="noopener" onclick="gtag('event', 'scholar_click');">View Profile</a></div>
+          <div class="contact-val"><a href="https://scholar.google.com/citations?user=a0w5UUgAAAAJ&hl=en" target="_blank" rel="noopener" onclick="gtag('event','scholar_click');">View Profile</a></div>
         </div>
       </div>
       <div class="contact-card">
         <div class="contact-icon">🆔</div>
         <div>
           <div class="contact-label">ORCID</div>
-          <div class="contact-val"><a href="https://orcid.org/0009-0009-4528-7379" target="_blank" rel="noopener" onclick="gtag('event', 'orcid_click');">0009-0009-4528-7379</a></div>
+          <div class="contact-val"><a href="https://orcid.org/0009-0009-4528-7379" target="_blank" rel="noopener" onclick="gtag('event','orcid_click');">0009-0009-4528-7379</a></div>
         </div>
       </div>
       <div class="contact-card">

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Akwasi Tagoe – PhD Researcher</title>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK205M49W0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FK205M49W0');
+  </script>
+
+  <!-- Browser tab icon / favicon: AT initials -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232D5016'/%3E%3Ctext x='50' y='62' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Tokens ─────────────────────────────────────────── */
+    :root {
+      --white:       #FFFFFF;
+      --surface:     #F7F7F5;
+      --border:      #E4E4DF;
+      --green:       #2D5016;
+      --green-light: #4A7A24;
+      --green-pale:  #EEF3E8;
+      --slate:       #3D4A5C;
+      --muted:       #7A8594;
+      --text:        #1A1F26;
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+
+      --max-w: 1100px;
+      --section-gap: 5rem;
+    }
+
+    /* ── Reset ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Nav ────────────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 3.25rem;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: -0.01em;
+    }
+    .nav-links {
+      display: flex; gap: 1.75rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--slate);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--green); text-decoration: none; }
+
+    /* ── Hero ───────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      padding: 5.5rem 0 4.5rem;
+      overflow: hidden;
+    }
+    /* Signature: aerial contour lines — top-view field texture */
+    .hero-contour {
+      position: absolute;
+      top: 0; right: -60px;
+      width: 520px; height: 100%;
+      opacity: 0.07;
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1.1rem;
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5.5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+    .hero-name em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--green);
+    }
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: var(--slate);
+      max-width: 540px;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      margin-bottom: 2.4rem;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--green);
+      color: var(--green);
+      border-radius: 2rem;
+      background: var(--green-pale);
+    }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--green);
+      padding: 0.65rem 1.4rem;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .hero-cta:hover { background: var(--green-light); text-decoration: none; }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+    .hero-photo-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 0.5rem;
+    }
+    .hero-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--green);
+      box-shadow: 0 4px 20px rgba(45,80,22,0.15);
+    }
+    /* Placeholder shown when no photo is set */
+    .hero-photo-placeholder {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 2px dashed var(--green);
+      background: var(--green-pale);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 1rem;
+      cursor: default;
+    }
+    .hero-photo-placeholder .ph-icon { font-size: 2rem; }
+    .hero-photo-hint {
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 160px;
+      line-height: 1.4;
+    }
+    .hero-stats {
+      display: flex; gap: 2.5rem;
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .stat-val {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    /* ── Section wrapper ────────────────────────────────── */
+    section { padding: var(--section-gap) 0; }
+    section:nth-child(even) { background: var(--surface); }
+
+    .section-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.6rem;
+    }
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 2.5rem;
+    }
+    .section-heading em { font-style: italic; font-weight: 400; color: var(--green); }
+
+    /* ── About ──────────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .about-body { font-size: 0.97rem; color: var(--slate); }
+    .about-body p + p { margin-top: 1rem; }
+
+    .edu-item { margin-bottom: 1.5rem; }
+    .edu-degree {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .edu-school {
+      font-size: 0.85rem;
+      color: var(--slate);
+    }
+    .edu-year {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Research areas ─────────────────────────────────── */
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .research-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .research-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 2px 16px rgba(45,80,22,0.08);
+    }
+    .card-icon { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .card-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    .card-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+    /* ── Skills strip ───────────────────────────────────── */
+    .skills-strip {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      margin-top: 2.5rem;
+    }
+    .skill-chip {
+      font-size: 0.75rem; font-weight: 500;
+      padding: 0.3rem 0.8rem;
+      background: var(--green-pale);
+      color: var(--green);
+      border-radius: 3px;
+    }
+
+    /* ── Publications ───────────────────────────────────── */
+    .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+    .pub-item {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .pub-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+      margin-bottom: 0.4rem;
+    }
+    .badge-published { background: var(--green-pale); color: var(--green); }
+    .badge-review    { background: #FEF3C7; color: #92400E; }
+    .badge-conf      { background: #EEF0F8; color: #3D4A8C; }
+    .pub-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.45;
+      margin-bottom: 0.25rem;
+    }
+    .pub-authors { font-size: 0.8rem; color: var(--muted); }
+    .pub-venue { font-size: 0.8rem; color: var(--slate); font-style: italic; }
+    .pub-link {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--green);
+      margin-top: 0.3rem;
+      display: inline-block;
+    }
+
+
+
+    /* ── Research Gallery ───────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .gallery-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: var(--green-pale);
+    }
+    .gallery-caption {
+      padding: 0.9rem 1rem;
+      font-size: 0.8rem;
+      color: var(--slate);
+      line-height: 1.5;
+    }
+
+    /* ── Awards ─────────────────────────────────────────── */
+    .award-list { display: flex; flex-direction: column; gap: 1.1rem; }
+    .award-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.1rem 1.25rem;
+      background: var(--white);
+      border-left: 3px solid var(--green);
+      border-radius: 0 4px 4px 0;
+    }
+    .award-year {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--green);
+      white-space: nowrap;
+      min-width: 48px;
+      padding-top: 0.1rem;
+    }
+    .award-body { flex: 1; }
+    .award-title { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+    .award-amount { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── Contact ─────────────────────────────────────────── */
+    #contact { background: var(--green); }
+    #contact .section-eyebrow { color: rgba(255,255,255,0.6); }
+    #contact .section-heading { color: var(--white); }
+    #contact .section-heading em { color: rgba(255,255,255,0.65); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .contact-card {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      padding: 1.25rem;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+    .contact-icon { font-size: 1.25rem; }
+    .contact-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 0.2rem;
+    }
+    .contact-val {
+      font-size: 0.88rem;
+      color: var(--white);
+      word-break: break-all;
+    }
+    .contact-val a { color: var(--white); }
+
+    /* ── Footer ─────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 1.75rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Responsive ─────────────────────────────────────── */
+    /* ── Media ───────────────────────────────────────────── */
+    .media-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .media-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 1.35rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+    .media-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 2px 14px rgba(45,80,22,0.09);
+      transform: translateX(3px);
+      text-decoration: none;
+    }
+    .media-meta {
+      display: flex;
+      flex-direction: column;
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+    .media-outlet {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    .media-date {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+    .media-title {
+      flex: 1;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .media-arrow {
+      font-size: 1rem;
+      color: var(--green);
+      flex-shrink: 0;
+      opacity: 0.6;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .media-card:hover .media-arrow { opacity: 1; transform: translateX(3px); }
+    .media-hint {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Ventures ────────────────────────────────────────── */
+    .ventures-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .venture-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.6rem;
+      position: relative;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .venture-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 2px 16px rgba(45,80,22,0.08);
+    }
+    .venture-type {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+    .venture-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    .venture-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .accelerator-banner {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      background: var(--green-pale);
+      border: 1px solid var(--green);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+    }
+    .accelerator-icon { font-size: 2rem; flex-shrink: 0; }
+    .accelerator-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.2rem;
+    }
+    .accelerator-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .accelerator-detail {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ─────────────────────────────────────────────
+       Tablet Responsive
+    ───────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .nav-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 1.5rem;
+        gap: 0.75rem;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.9rem;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-photo-col {
+        align-items: flex-start;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .media-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .accelerator-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* ─────────────────────────────────────────────
+       Mobile Responsive
+    ───────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      :root {
+        --section-gap: 3rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .nav-logo {
+        font-size: 1rem;
+      }
+
+      .nav-links {
+        gap: 0.6rem;
+      }
+
+      .nav-links a {
+        font-size: 0.7rem;
+      }
+
+      #hero {
+        padding-top: 4rem !important;
+      }
+
+      .hero-name {
+        font-size: 2.4rem;
+        line-height: 1.1;
+      }
+
+      .hero-tagline {
+        font-size: 0.95rem;
+      }
+
+      .hero-photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      .hero-photo-placeholder {
+        width: 120px;
+        height: 120px;
+      }
+
+      .hero-photo-hint {
+        display: none;
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-val {
+        font-size: 1.3rem;
+      }
+
+      .research-grid,
+      .gallery-grid,
+      .ventures-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .award-item {
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .award-year {
+        min-width: auto;
+      }
+
+      .section-heading {
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    /* ─────────────────────────────────────────────
+       Very Small Phones
+    ───────────────────────────────────────────── */
+    @media (max-width: 400px) {
+      .hero-name {
+        font-size: 2rem;
+      }
+
+      .hero-tags {
+        gap: 0.35rem;
+      }
+
+      .tag {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.55rem;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─────────────────────────────────────────────
+       Accessibility
+    ───────────────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Akwasi Tagoe</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#ventures">Ventures</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────── -->
+<section id="hero" style="background: var(--white); padding: 5.5rem 0 4rem;">
+  <!-- Signature: SVG aerial contour / field survey lines -->
+  <svg class="hero-contour" viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <ellipse cx="280" cy="300" rx="200" ry="260" stroke="#2D5016" stroke-width="1.2"/>
+    <ellipse cx="280" cy="300" rx="165" ry="215" stroke="#2D5016" stroke-width="1"/>
+    <ellipse cx="280" cy="300" rx="130" ry="170" stroke="#2D5016" stroke-width="0.9"/>
+    <ellipse cx="280" cy="300" rx="96" ry="126" stroke="#2D5016" stroke-width="0.8"/>
+    <ellipse cx="280" cy="300" rx="64" ry="84" stroke="#2D5016" stroke-width="0.7"/>
+    <ellipse cx="280" cy="300" rx="35" ry="44" stroke="#2D5016" stroke-width="0.6"/>
+    <!-- Drone path line -->
+    <path d="M80 120 Q200 80 300 160 Q420 240 380 380 Q340 480 200 500" stroke="#2D5016" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <!-- Grid lines suggesting field parcels -->
+    <line x1="100" y1="0" x2="100" y2="600" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="350" y1="0" x2="350" y2="600" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="460" y1="0" x2="460" y2="600" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="0" y1="150" x2="500" y2="150" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="0" y1="300" x2="500" y2="300" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <line x1="0" y1="450" x2="500" y2="450" stroke="#2D5016" stroke-width="0.4" stroke-dasharray="3 8"/>
+    <!-- UAV marker dot -->
+    <circle cx="300" cy="160" r="4" fill="#2D5016"/>
+    <circle cx="300" cy="160" r="8" stroke="#2D5016" stroke-width="0.8"/>
+  </svg>
+
+  <div class="container" style="position:relative;">
+    <div class="hero-inner">
+      <!-- Left: text content -->
+      <div>
+        <p class="hero-eyebrow">PhD Candidate · University of Arkansas · DAST Lab</p>
+        <h1 class="hero-name">
+          Akwasi<br>
+          <em>Tagoe</em>
+        </h1>
+        <p class="hero-tagline">
+          Developing UAV-based phenotyping systems, deep learning models, and precision agriculture tools that help growers make smarter decisions from above.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Remote Sensing</span>
+          <span class="tag">UAV Phenotyping</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">Precision Agriculture</span>
+          <span class="tag">Geospatial Analytics</span>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="#contact" class="hero-cta" onclick="gtag('event', 'contact_cta_click');">Get in Touch →</a>
+          <a href="files/Akwasi_Tagoe_CV.pdf" target="_blank" class="hero-cta" onclick="gtag('event', 'cv_download');">Download CV</a>
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero-photo-col">
+        <img src="images/profile.jpg" alt="Akwasi Tagoe" class="hero-photo" />
+        <p class="hero-photo-hint"></p>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-val">6+</div>
+        <div class="stat-label">Publications</div>
+      </div>
+      <div>
+        <div class="stat-val">10+</div>
+        <div class="stat-label">Presentations</div>
+      </div>
+      <div>
+        <div class="stat-val">$18k+</div>
+        <div class="stat-label">Awards & Funding</div>
+      </div>
+      <div>
+        <div class="stat-val">FAA</div>
+        <div class="stat-label">Part 107 Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ───────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <p class="section-eyebrow">Background</p>
+    <h2 class="section-heading">About <em>Me</em></h2>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          I am a PhD candidate in Agricultural Education, Communications &amp; Technology (Agricultural Systems Technology Management) at the <strong>University of Arkansas, Fayetteville</strong>, working across the Digital Agricultural Science and Technology (DAST) Lab and the Agricultural Robotics Initiative.
+        </p>
+        <p>
+          My research integrates artificial intelligence, machine learning, remote sensing, and agricultural data systems to support precision agriculture and crop monitoring. A core focus is developing UAV-based workflows for blackberry flowering assessment and yield prediction using YOLO-based object detection and multispectral imagery.
+        </p>
+        <p>
+          Alongside my research career I have co-founded two AgriTech startups, and in 2017 was selected to participate in <strong>Startupbootcamp Fintech Dubai</strong> — one of the world's leading accelerator programmes. This entrepreneurial thread runs through everything I do, and is reflected in my Graduate Certificate in Entrepreneurship and the Hodges Entrepreneurial Fellowship at UARK.
+        </p>
+        <p>
+          Before joining UARK, I spent nearly five years as a Cocoa Management Systems Coordinator at the <strong>Ghana Cocoa Board (COCOBOD)</strong>, where I designed large-scale agricultural data management systems and deployed digital field technologies across the cocoa sector.
+        </p>
+        <p>
+          I hold an M.Sc. in Agricultural &amp; Environmental Science from <strong>Newcastle University</strong> (UK) and a B.Sc. in Agriculture from <strong>KNUST</strong>, Ghana.
+        </p>
+      </div>
+      <div>
+        <p class="section-eyebrow" style="margin-bottom:1rem;">Education</p>
+        <div class="edu-item">
+          <div class="edu-degree">Ph.D., Agricultural Education, Communications &amp; Technology</div>
+          <div class="edu-degree"><em>Graduate Certificate in Entrepreneurship</em></div>
+          <div class="edu-school">University of Arkansas, Fayetteville, AR</div>
+          <div class="edu-year">Aug 2022 – Expected Dec 2026 · </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">M.Sc. Agricultural &amp; Environmental Science</div>
+          <div class="edu-school">Newcastle University, United Kingdom</div>
+          <div class="edu-year">Nov 2016</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Postgraduate Certificate in Business Administration</div>
+          <div class="edu-school">Ghana Institute of Management &amp; Public Administration</div>
+          <div class="edu-year">May 2014</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">B.Sc. (Hons), Agriculture</div>
+          <div class="edu-school">Kwame Nkrumah University of Science &amp; Technology, Ghana</div>
+          <div class="edu-year">June 2010</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Research ────────────────────────────────────────── -->
+<section id="research">
+  <div class="container">
+    <p class="section-eyebrow">Expertise</p>
+    <h2 class="section-heading">Research <em>Focus</em></h2>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="card-icon">🛸</div>
+        <div class="card-title">UAV Remote Sensing</div>
+        <div class="card-desc">UAV-based phenotyping workflows for crop feature extraction, vegetation characterization, and biomass estimation.</div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🤖</div>
+        <div class="card-title">Deep Learning & AI</div>
+        <div class="card-desc">YOLO-based object detection for automated crop monitoring. ML models integrating imagery, vegetation indices, and environmental variables.</div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🫐</div>
+        <div class="card-title">Specialty Crop Phenotyping</div>
+        <div class="card-desc">Flowering and reproductive trait quantification, yield prediction, and canopy characterization in blackberry and other horticultural crops.</div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🌾</div>
+        <div class="card-title">Precision Agriculture</div>
+        <div class="card-desc">Crop health monitoring, precision management systems, and data-driven decision-support tools for specialty and agronomic production.</div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">🗺️</div>
+        <div class="card-title">Geospatial Analytics</div>
+        <div class="card-desc">Large-scale spatial dataset processing with ArcGIS Pro, Python, and R. Mixed-effects modeling and regression for agricultural prediction.</div>
+      </div>
+      <div class="research-card">
+        <div class="card-icon">📡</div>
+        <div class="card-title">Multispectral Imaging</div>
+        <div class="card-desc">RGB and multispectral remote sensing evaluation for crop monitoring, vegetation indices, and field-scale phenotyping.</div>
+      </div>
+    </div>
+
+    <div class="skills-strip">
+      <span class="skill-chip">Python</span>
+      <span class="skill-chip">R</span>
+      <span class="skill-chip">PyTorch</span>
+      <span class="skill-chip">YOLOv8</span>
+      <span class="skill-chip">TensorFlow</span>
+      <span class="skill-chip">ArcGIS Pro</span>
+      <span class="skill-chip">OpenCV</span>
+      <span class="skill-chip">MATLAB</span>
+      <span class="skill-chip">UAV Operations</span>
+      <span class="skill-chip">Multispectral Imaging</span>
+      <span class="skill-chip">LiDAR</span>
+      <span class="skill-chip">Statistical Modeling</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Gallery ─────────────────────────────────────────── -->
+
+<!-- ── Publications ────────────────────────────────────── -->
+<section id="publications">
+  <div class="container">
+    <p class="section-eyebrow"></p>
+    <h2 class="section-heading">Selected <em>Publications</em></h2>
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <span class="pub-badge badge-published">Published · 2025</span>
+        <div class="pub-title">Advances in crop germplasm conservation: A review of non-destructive techniques and their role in global food security</div>
+        <div class="pub-authors">Yeboah, A., Tetteh, R., Mensah, E. O., Bonsu, B. B., <strong>Tagoe, A.</strong>, &amp; Boateng, I. D.</div>
+        <div class="pub-venue">Journal of Agriculture and Food Research, 102435</div>
+        <a class="pub-link" href="https://doi.org/10.1016/j.jafr.2025.102435" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'JAFR 2025 germplasm conservation'});">doi.org/10.1016/j.jafr.2025.102435 ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-badge badge-published">Published · 2024</span>
+        <div class="pub-title">Blackberry growth monitoring and feature quantification with unmanned aerial vehicle (UAV) remote sensing</div>
+        <div class="pub-authors"><strong>Tagoe, A.</strong>, Silva, A., Koparan, C., Poncet, A., Wang, D., Johnson, D., &amp; Worthington, M.</div>
+        <div class="pub-venue">AgriEngineering, 6(4), 4549</div>
+        <a class="pub-link" href="https://doi.org/10.3390/agriengineering6040260" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'AgriEngineering 2024 blackberry UAV'});">doi.org/10.3390/agriengineering6040260 ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-badge badge-review">Under Review · 2026</span>
+        <div class="pub-title">Object Detection Algorithm Evaluation on Blackberry Flower Quantification from UAV Imagery</div>
+        <div class="pub-authors"><strong>Tagoe, A.</strong>, Koparan, A., Worthington, M., Johnson, D., Wang, D., &amp; Wardlow, G.W.</div>
+        <div class="pub-venue">Journal of Agriculture and Food Research</div>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-badge badge-review">Under Review · 2026</span>
+        <div class="pub-title">UAV-Assisted Corn Biomass Estimation from RGB Monocular Depth</div>
+        <div class="pub-authors"><strong>Tagoe, A.</strong>, Azmir, N.M., Nores, M., Elli, F.E., Johnson, D., Wardlow, G.W., &amp; Koparan, A.</div>
+        <div class="pub-venue">Journal of Agriculture and Food Research</div>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-badge badge-conf">Conference · 2025</span>
+        <div class="pub-title">Preliminary analysis of computer vision for blackberry flower quantification</div>
+        <div class="pub-authors"><strong>Tagoe, A.</strong>, Bist, R. B., Koparan, C., Johnson, D., Wang, D., Worthington, M., &amp; Poncet, A.</div>
+        <div class="pub-venue">Proceedings of the 2025 ASABE Annual International Meeting</div>
+        <a class="pub-link" href="https://doi.org/10.13031/aim.202501350" target="_blank" rel="noopener" onclick="gtag('event', 'publication_click', {'event_label': 'ASABE 2025 blackberry flower quantification'});">doi.org/10.13031/aim.202501350 ↗</a>
+      </div>
+
+      <div class="pub-item">
+        <span class="pub-badge badge-conf">Conference · 2024</span>
+        <div class="pub-title">Vegetation-coverage-specific flower density estimation in blackberry using UAV remote sensing</div>
+        <div class="pub-authors"><strong>Tagoe, A.</strong>, Koparan, A., Koparan, C., Poncet, A., Wang, D., Johnson, D. M., &amp; Worthington, M.</div>
+        <div class="pub-venue">16th International Conference on Precision Agriculture, ISPA</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Ventures ────────────────────────────────────────── -->
+<section id="ventures">
+  <div class="container">
+    <p class="section-eyebrow">Entrepreneurship</p>
+    <h2 class="section-heading">AgriTech <em>Ventures</em></h2>
+    <div class="ventures-grid">
+      <div class="venture-card">
+        <div class="venture-type">AgriTech Startup · Founder</div>
+        <div class="venture-name">Nocofio FT Limited</div>
+        <div class="venture-desc">Nocofio FT Limited develops technology-driven solutions for agriculture, financial inclusion, and digital transformation. The company focuses on leveraging data, technology, and innovation to improve productivity, accessibility, and decision-making across agricultural and business systems.</div>
+      </div>
+      <div class="venture-card">
+        <div class="venture-type">AgriTech Startup · Founder</div>
+        <div class="venture-name">Locagro</div>
+        <div class="venture-desc">Locagro is an agricultural technology platform focused on connecting farmers, agricultural stakeholders, and markets through digital solutions that support precision agriculture, supply chain efficiency, and data-driven farm management.</div>
+      </div>
+    </div>
+    <div class="accelerator-banner">
+      <div class="accelerator-icon">🚀</div>
+      <div>
+        <div class="accelerator-label">Global Accelerator · 2019</div>
+        <div class="accelerator-name">Startupbootcamp Fintech Dubai</div>
+        <div class="accelerator-detail">Selected participant in one of the world's leading fintech &amp; agritech accelerator programmes, Dubai, UAE.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Media ───────────────────────────────────────────── -->
+<section id="media">
+  <div class="container">
+    <p class="section-eyebrow">Press &amp; News</p>
+    <h2 class="section-heading">In the <em>Media</em></h2>
+    <div class="media-list">
+
+      <a class="media-card" href="https://aaes.uada.edu/news/uavs-blackberry-flowering/" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Arkansas Ag Experiment Station'});">
+        <div class="media-meta">
+          <span class="media-outlet">Arkansas Ag Experiment Station</span>
+          <span class="media-date">Feb. 2026</span>
+        </div>
+        <div class="media-title">Can Drones Offer a Faster, More Precise Way to Measure Blackberry Flowering?</div>
+        <div class="media-arrow">→</div>
+      </a>
+
+      <a class="media-card" href="https://news.uark.edu/articles/79965/oei-selects-six-graduate-entrepreneurial-fellows-for-2025" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'University of Arkansas News'});">
+        <div class="media-meta">
+          <span class="media-outlet">University of Arkansas News</span>
+          <span class="media-date">Sep. 2025</span>
+        </div>
+        <div class="media-title">OEI Selects Six Graduate Entrepreneurial Fellows for 2025</div>
+        <div class="media-arrow">→</div>
+      </a>
+      <!-- Ventureburn -->
+      <a class="media-card" href="https://ventureburn.com/2019/05/nocofio-startupbootcamp-fintech-dubai/" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Ventureburn'});">
+       <div class="media-meta">
+         <span class="media-outlet">Ventureburn</span>
+         <span class="media-date">May 2019</span>
+       </div>
+      <div class="media-title">Nocofio Selected for Startupbootcamp FinTech Dubai Program</div>
+      <div class="media-arrow">→</div>
+      </a>
+
+<!-- Modern Ghana -->
+    <a class="media-card" href="https://www.modernghana.com/news/892369/2018-ruforum-produces-two-ghanaian-winners.html" target="_blank" rel="noopener" onclick="gtag('event', 'media_click', {'event_label': 'Modern Ghana'});">
+     <div class="media-meta">
+      <span class="media-outlet">Modern Ghana</span>
+     <span class="media-date">Oct. 2018</span>
+    </div>
+    <div class="media-title">2018 RUFORUM Produces Two Ghanaian Winners</div>
+    <div class="media-arrow">→</div>
+    </a>
+
+      <!-- Add more media cards here — copy the block above and fill in outlet, date, title, and href -->
+
+    </div>
+    <p class="media-hint"></p>
+  </div>
+</section>
+
+<!-- ── Awards ──────────────────────────────────────────── -->
+<section id="awards">
+  <div class="container">
+    <p class="section-eyebrow">Recognition</p>
+    <h2 class="section-heading">Awards &amp; <em>Funding</em></h2>
+    <div class="award-list">
+      <div class="award-item">
+        <div class="award-year">2025</div>
+        <div class="award-body">
+          <div class="award-title">Kaneaster &amp; Ruth Lindley Hodges Entrepreneurial Fellowship Award</div>
+          <div class="award-amount">$10,000 · University of Arkansas</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-year">2025</div>
+        <div class="award-body">
+          <div class="award-title">GPSC Tiffany Marcantonio Research Grant</div>
+          <div class="award-amount">$1,500 · University of Arkansas</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-year">2024</div>
+        <div class="award-body">
+          <div class="award-title">National Grain and Feed Association (NGFA) Scholarship</div>
+          <div class="award-amount">$5,000 · University of Arkansas</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-year">2024</div>
+        <div class="award-body">
+          <div class="award-title">USDA-NIFA Agricultural Genome to Phenome Initiative Travel Grant</div>
+          <div class="award-amount">$1,500</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-year">2024</div>
+        <div class="award-body">
+          <div class="award-title">S1069 UAS Applications in U.S. Agriculture Travel Grant</div>
+          <div class="award-amount">$1,500</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-year">2024</div>
+        <div class="award-body">
+          <div class="award-title">3 Minute Thesis (3MT) Finalist</div>
+          <div class="award-amount">University of Arkansas · "Drones, Data, Blackberries"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ─────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <p class="section-eyebrow">Let's Connect</p>
+    <h2 class="section-heading">Get in <em>Touch</em></h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-val"><a href="mailto:atagoe@uark.edu" onclick="gtag('event', 'email_click');">atagoe@uark.edu</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <!-- LinkedIn icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="24" height="24" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <path d="M7.5 9.5H5V19H7.5V9.5ZM6.25 8.5C7.08 8.5 7.75 7.83 7.75 7C7.75 6.17 7.08 5.5 6.25 5.5C5.42 5.5 4.75 6.17 4.75 7C4.75 7.83 5.42 8.5 6.25 8.5ZM19 19H16.5V14.1C16.5 12.55 15.95 11.75 14.75 11.75C13.45 11.75 12.75 12.58 12.75 14.1V19H10.25V9.5H12.65V10.6C13.15 9.87 14.05 9.25 15.35 9.25C17.5 9.25 19 10.6 19 13.3V19Z" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-val"><a href="https://www.linkedin.com/in/akwasi-tagoe/" target="_blank" rel="noopener" onclick="gtag('event', 'linkedin_click');">akwasi-tagoe</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <!-- GitHub icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="24" height="24" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58 4 4 7.58 4 12C4 15.54 6.29 18.53 9.47 19.59C9.87 19.66 10.02 19.42 10.02 19.21C10.02 19.02 10.01 18.39 10.01 17.72C8 18.09 7.48 17.23 7.32 16.78C7.23 16.55 6.84 15.84 6.5 15.65C6.22 15.5 5.82 15.13 6.49 15.12C7.12 15.11 7.57 15.7 7.72 15.94C8.44 17.15 9.59 16.81 10.05 16.6C10.12 16.08 10.33 15.73 10.56 15.53C8.78 15.33 6.92 14.64 6.92 11.58C6.92 10.71 7.23 9.99 7.74 9.43C7.66 9.23 7.38 8.41 7.82 7.31C7.82 7.31 8.49 7.1 10.02 8.13C10.66 7.95 11.34 7.86 12.02 7.86C12.7 7.86 13.38 7.95 14.02 8.13C15.55 7.09 16.22 7.31 16.22 7.31C16.66 8.41 16.38 9.23 16.3 9.43C16.81 9.99 17.12 10.7 17.12 11.58C17.12 14.65 15.25 15.33 13.47 15.53C13.76 15.78 14.01 16.26 14.01 17.01C14.01 18.08 14 18.94 14 19.21C14 19.42 14.15 19.67 14.55 19.59C17.71 18.53 20 15.53 20 12C20 7.58 16.42 4 12 4Z" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-val"><a href="https://github.com/akwaysi" target="_blank" rel="noopener" onclick="gtag('event', 'github_click');">akwaysi</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <!-- Google Scholar icon (graduation cap) -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="24" height="24" rx="4" fill="rgba(255,255,255,0.15)"/>
+            <path d="M12 3L2 8.5L12 14L20 9.64V16H22V8.5L12 3Z" fill="white"/>
+            <path d="M6 11.28V16C6 16 7.5 19 12 19C16.5 19 18 16 18 16V11.28L12 14.78L6 11.28Z" fill="white" opacity="0.7"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-label">Google Scholar</div>
+          <div class="contact-val"><a href="https://scholar.google.com/citations?user=a0w5UUgAAAAJ&hl=en" target="_blank" rel="noopener" onclick="gtag('event', 'scholar_click');">View Profile</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🆔</div>
+        <div>
+          <div class="contact-label">ORCID</div>
+          <div class="contact-val"><a href="https://orcid.org/0009-0009-4528-7379" target="_blank" rel="noopener" onclick="gtag('event', 'orcid_click');">0009-0009-4528-7379</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-val">Fayetteville, AR 72704</div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🎓</div>
+        <div>
+          <div class="contact-label">Institution</div>
+          <div class="contact-val">University of Arkansas · DAST Lab</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────── -->
+<footer>
+  © 2026 Akwasi Tagoe · PhD Candidate, University of Arkansas · Built with purpose.
+</footer>
+
+</body>
+</html>
